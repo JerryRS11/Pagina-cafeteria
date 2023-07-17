@@ -1,0 +1,721 @@
+/*Esto es un comentario en CSS*/
+
+/*Tipo de letra*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*Tipo de fuente*/
+body{
+   font-family: 'Poppins', sans-serif;
+}
+
+/*Vista de escritorio*/
+
+/*HEADER*/
+
+/*Estilo general*/
+   /*La propiedad margin aplica margenes a un elemento*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Box-sizzing ajusta el tamaño de la caja tanto de relleno como de margen
+   (margin y padding)*/
+   /*Text-decoration elimina la linea de los enlaces*/
+   /*List-style elimina los bullets de las listas*/
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+}
+
+/*Aplicar estilo a la clase container*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.container{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+/*Aplicar estilo a header*/
+   /*background-repeat: no-repeat;*/ /*Evitar repetir imagen en eje*/
+   /*background-size: cover;*/ /*Tamaño de la imagen hasta cubrir elemento*/
+   /*VH significa ViewHeight*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+.header{
+   background-image: linear-gradient(
+                        rgba(0,0,0,0.7),
+                        rgba(0,0,0,0.7)),
+                        url(../Imagenes/bg.jpg);
+   background-position: center bottom;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 70vh;
+   display: flex;
+   align-items: center;
+}
+
+/*Aplicar estilo a la clase menu*/
+   /*La posición absoluta fija una posición y no se le puede modificar las
+   propiedades al elemento*/
+   /*La propiedad top especifica la distancia entre el margen superior del
+   elemento y el margen superior de su contenedor*/
+   /*La propiedad left especifica la distancia entre el margen izquierdo del
+   elemento y el margen izquierdo de su contenedor*/
+   /*La propiedad right especifica la distancia entre el margen derecho del
+   elemento y el margen derecho de su contenedor*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+   /*La propiedad space-between se usa para dejar espacio entre elementos*/
+.menu{
+   position: absolute;
+   top:0;
+   left:0;
+   right: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/*Aplicar estilo a la clase logo*/
+.logo{
+   color:#FFFDFC;
+   font-size: 25px;
+   font-weight: 800;
+}
+
+/*Aplicar estilo a la lista 1 del menu de navegación*/
+   /*La posición relativa hace que se puedan modificar las propiedades del
+   elemento*/
+   /*Float:left hace que el elemento flote a la izquierda*/
+.menu .navbar ul li{
+   position: relative;
+   float: left;
+}
+
+/*Aplicar estilo a los enlaces de la lista 1 del menu de navegación*/
+.menu .navbar ul li a{
+   font-size: 18px;
+   padding: 20px;
+   color:#FFFDFC;
+   display: block;
+   font-weight: 600;
+}
+
+/*Aplicar estilo a los enlaces al pasar por ellos de la lista 1 del menu
+de navegación*/
+.menu .navbar ul li a:hover{
+   color:#CE967B;
+}
+
+/*Aplicar estilo al identificador menu*/
+   /*Display: none oculta un elemento sin eliminarlo*/
+#menu{
+   display: none;
+}
+
+/*Aplicar estilo al icono de la clase menu*/
+.menu-icono{
+   width: 25px;
+}
+
+/*Aplicar estilo a etiquetas de la clase menu*/
+   /*Display: none oculta un elemento sin eliminarlo*/
+.menu label{
+   cursor: pointer;
+   display: none;
+}
+
+/*Aplicar estilo al contenido de la clase header*/
+.header-content{
+   text-align: center;
+}
+
+/*Aplicar estilo a titulo ddel contenido de la clase header*/
+   /*Line-height sirve para la altura de la letra*/
+   /*Text-transform:uppercase transforma el texto a mayúsculas*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.header-content h1{
+   font-size: 75px;
+   line-height: 80px;
+   color:#F9FAFC;
+   text-transform: uppercase;
+   margin-bottom: 35px;
+}
+
+/*Aplicar estilo al párrafo del contenido de la clase header*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.header-content p{
+   font-size: 16px;
+   color:#C5C5C5;
+   padding: 0 250px;
+   margin-bottom: 25px;
+}
+
+/*Aplicar estilo al botón 1*/
+   /*Display: inline-block muestra el elemento en la misma linea y tamaño
+   personalizado*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+   /*Text-transform:uppercase transforma el texto a mayúsculas*/
+.btn-1{
+   display: inline-block;
+   padding: 11px 35px;
+   background-color: #CE967B;
+   color:#F9FAFC;
+   text-transform: uppercase;
+   font-weight: bold;
+   border-radius: 25px;
+}
+
+/*Aplicar estilo al botón 1 al pasar por él*/
+.btn-1:hover{
+   background-color: #5C4033	;
+   color:#F9FAFC;
+}
+
+/*COFFEE*/
+
+/*Aplicar estilos a la clase coffee*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+   /*La posición relativa hace que se puedan modificar las propiedades del
+   elemento*/
+.coffee{
+   padding: 80px 0;
+   background-color: #E1E2E6;
+   position: relative;
+}
+
+/*Aplicar estilo al contenido de la clase coffee*/
+.coffee-content{
+   text-align: center;
+}
+
+/*Aplicar estilo al titulo del contenido de la clase coffee*/
+   /*Line-height sirve para la altura de la letra*/
+   /*Text-transform:uppercase transforma el texto a mayúsculas*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.coffee-content h2{
+   font-size: 55px;
+   line-height: 70px;
+   color:#323337;
+   text-transform: uppercase;
+   padding: 0 250px;
+   margin-bottom: 15px;
+}
+
+/*Aplicar estilo a la clase txt-p*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.txt-p{
+   font-size: 16px;
+   color:#414247;
+   padding: 0 250px;
+   margin-bottom: 35px;
+}
+
+/*Aplicar estilos a la clase coffe-group*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+   /*La propiedad space-between se usa para dejar espacio entre elementos*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.coffee-group{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 50px;
+}
+
+/*Aplicar estilos a la clase coffee-1*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+.coffee-1{
+   padding: 0 25px;
+}
+
+/*Aplicar estilo a la imagen de la clase coffee-1*/
+.coffee-1 img{
+   width: 200px;
+}
+
+/*Aplicar estilo a la clase coffee-img*/
+   /*La posición absoluta fija una posición y no se le puede modificar las
+   propiedades al elemento*/
+   /*La propiedad top especifica la distancia entre el margen superior del
+   elemento y el margen superior de su contenedor*/
+   /*La propiedad right especifica la distancia entre el margen derecho del
+   elemento y el margen derecho de su contenedor*/
+.coffee-img{
+   position: absolute;
+   top:0;
+   right:0;
+}
+
+/*Cambiar estilo del titulo de la clase coffee-1*/
+.coffee-1 h3{
+   color:#323337;
+   font-size: 20px;
+   margin-bottom: 15px;
+}
+
+/*SERVICES*/
+
+/*Aplicar estilo a la clase services*/
+   /*background-repeat: no-repeat;*/ /*Evitar repetir imagen en eje*/
+   /*background-size: cover;*/ /*Tamaño de la imagen hasta cubrir elemento*/
+   /*background-attachment: fixed sirve para dejar fija una imagen de fondo*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+.services{
+   background-image: linear-gradient(
+                  rgba(0,0,0,0.7),
+                  rgba(0,0,0,0.7)),
+                  url(../Imagenes/bg2.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   padding: 100px 0;
+}
+
+/*Aplicar estilo al contenido de la clase services*/
+.services-content{
+   text-align: center;
+}
+
+/*Aplicar estilo al titulo del contenido de la clase services*/
+   /*Line-height sirve para la altura de la letra*/
+   /*Text-transform:uppercase transforma el texto a mayúsculas*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.services-content h2{
+   font-size: 55px;
+   line-height: 70px;
+   color:#F9FAFC;
+   text-transform: uppercase;
+   margin-bottom: 50px;
+}
+
+/*Aplicar estilo al párrafo del contenido de la clase services*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.services-content p{
+   font-size: 16px;
+   color:#C5C5C5;
+   margin-bottom: 50px;
+   padding: 0 100px;
+}
+
+/*Aplicar estilo a la clase services-group*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+   /*La propiedad space-between se usa para dejar espacio entre elementos*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.services-group{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 50px;
+}
+
+/*Aplicar estilo a la clase services-1*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+.services-1{
+   padding: 0 100px;
+}
+
+/*Aplicar estilo a la imagen de la clase services-1*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.services-1 img{
+   width: 25px;
+   margin-bottom: 15px;
+}
+
+/*Aplicar estilo al titulo de la clase services-1*/
+.services-1 h3{
+   color:#EACCB3;
+   font-size: 18px;
+}
+
+/*GENERAL*/
+
+/*Aplicar estilo a la clase general*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+.general{
+   display: flex;
+}
+
+/*Aplicar estilo a la clase general-1*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+.general-1{
+   width: 50%;
+   padding:70px 250px 70px 100px;
+   background-color: #E1E2E6;
+}
+
+/*Aplicar estilo a la clase general-2*/
+   /*background-repeat: no-repeat;*/ /*Evitar repetir imagen en eje*/
+   /*background-size: cover;*/ /*Tamaño de la imagen hasta cubrir elemento*/
+.general-2{
+   background-image: url(../Imagenes/coffe-1.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 50%;
+}
+
+/*Aplicar estilo a la clase general-3*/
+   /*background-repeat: no-repeat;*/ /*Evitar repetir imagen en eje*/
+   /*background-size: cover;*/ /*Tamaño de la imagen hasta cubrir elemento*/
+.general-3{
+   background-image: url(../Imagenes/coffee-2.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 50%;
+}
+
+/*Aplicar estilo a titulos clase h2*/
+   /*Line-height sirve para la altura de la letra*/
+   /*Text-transform:uppercase transforma el texto a mayúsculas*/
+   /*La propiedad margin aplica margenes a un elemento*/
+h2{
+   font-size: 39px;
+   line-height: 70px;
+   color:#323337;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+/*Aplicar estilo a párrafos*/
+   /*La propiedad margin aplica margenes a un elemento*/
+   /*Arriba Abajo | Izquierda Derecha*/
+p{
+   font-size: 16px;
+   color:#414247;
+   margin: 25px 0 45px 0;
+}
+
+/*BLOG*/
+
+/*Aplicar estilo a la clase blog*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+.blog{
+   padding:40px 0;
+   text-align: center;
+}
+
+/*Aplicar estilo al contenido del blog*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+   /*La propiedad space-between se usa para dejar espacio entre elementos*/
+.blog-content{
+   display: flex;
+   justify-content:space-between;
+}
+
+/*Aplicar estilo a la clase blog-1*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+.blog-1{
+   padding:15px 55px;
+}
+
+/*Aplicar estilo a las imágenes de la clase blog-1*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.blog-1 img{
+   width: 250px;
+   border-radius: 15px;
+   margin-bottom: 15px;
+}
+
+/*Aplicar estilos a los titulos del blog-1*/
+.blog-1 h3{
+   font-size: 25px;
+   color:#323337;
+}
+
+/*FOOTER*/
+
+/*Aplicar estilo a la clase footer*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+.footer{
+   padding: 60px 0;
+   background-color: #000000;
+}
+
+/*Aplicar estilo al contenido de la clase footer*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+   /*La propiedad space-between se usa para dejar espacio entre elementos*/
+.footer-content{
+   display: flex;
+   justify-content: space-between;
+}
+
+/*Aplicar estilo a los titulos de la clase link*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.link h3{
+   font-size: 18px;
+   color:#F9FAFC;
+   margin-bottom: 15px;
+   text-align: center;
+}
+
+/*Aplicar estilos a los enlaces de la clase link*/
+   /*La propiedad margin aplica margenes a un elemento*/
+   /*Display: block muestra el elementos en una nueva linea y
+   tamaño personalizado*/
+.link a{
+   font-size: 16px;
+   color:#C5C5C5;
+   display: block;
+   margin-bottom: 15px;
+   text-align: center;
+}
+
+/*Aplicar estilos al pasar por los enlaces de la clase link*/
+   /*La propiedad margin aplica margenes a un elemento*/
+   /*Display: block muestra el elementos en una nueva linea y
+   tamaño personalizado*/
+.link a:hover{
+   font-size: 16px;
+   color:#CE967B;
+   display: block;
+   margin-bottom: 15px;
+   text-align: center;
+}
+
+/*Vista móvil o dispositivos*/
+
+/*Aplicar diseño a dispositivos móviles*/
+@media(max-width:1125px){
+
+   /*Cambiar tamaño de la clase menu*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .menu{
+      padding: 30px;
+   }
+
+   /*Aplicar estilo a las etiquetas de la clase menu*/
+      /*Display:initial utiliza las propiedades iniciales del elemento*/
+   .menu label{
+      display: initial;
+   }
+
+   /*Cambiar tamaño de barra de navegación*/
+      /*La posición absoluta fija una posición y no se le puede modificar las
+      propiedades al elemento*/
+      /*La propiedad top especifica la distancia entre el margen superior del
+      elemento y el margen superior de su contenedor*/
+      /*La propiedad left especifica la distancia entre el margen izquierdo del
+      elemento y el margen izquierdo de su contenedor*/
+      /*La propiedad right especifica la distancia entre el margen derecho del
+      elemento y el margen derecho de su contenedor*/
+      /*Display: none oculta un elemento sin eliminarlo*/
+   .menu .navbar{
+      position: absolute;
+      top:100%;
+      left:0;
+      right:0;
+      background-color:#323337;
+      display: none;
+   }
+
+   /*Cambiar tamaño de lista del menu de navegación*/
+   .menu .navbar ul li{
+      width: 100%;
+   }
+
+   /*Cambiar tamaño al checked del identificador menu*/
+      /*Display:initial utiliza las propiedades iniciales del elemento*/
+   #menu:checked ~.navbar{
+      display: initial;
+   }
+
+   /*Cambiar tamaño de la clase header*/
+      /*VH significa ViewHeight*/
+   .header{
+      min-height: 0vh;
+   }
+
+   /*Cambiar tamaño del contenido de la clase header*/
+      /*La propiedad padding aplica relleno a un elemento*/
+      /*Padding: arriba y abajo  |  izquierda y derecha*/
+   .header-content{
+      padding: 100px 30px;
+   }
+
+   /*Cambiar tamaño del párrafo de la clase heder-content*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .header-content p{
+      padding: 0;
+   }
+
+   /*Cambiar tamaño de la clase coffee*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .coffee{
+      padding: 30px;
+   }
+
+   /*Cambiar tamaño del titulo del contenido de la clase coffee*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .coffee-content h2{
+      padding: 0;
+   }
+
+   /*Cambiar tamaño de la clase txt-p*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .txt-p{
+      padding: 0;
+   }
+
+   /*Cambiar tamaño de la clase coffee-group*/
+      /*La propiedad flex-direction especifica como colocar los objetos al 
+      contenedor definiendo el eje principal y la dirección*/
+      /*La propiedad margin aplica margenes a un elemento*/
+   .coffee-group{
+      flex-direction: column;
+      margin-bottom: 0;
+   }
+
+   /*Cambiar estilo de la clase coffee-img*/
+      /*Display: none oculta un elemento sin eliminarlo*/
+   .coffee-img{
+      display: none;
+   }
+
+   /*Cambiar tamaño de la clase services*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .services{
+      padding: 30px;
+   }
+
+   /*Cambiar tamaño de los párrafos del contenido la clase services*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .services-content p{
+      padding: 0;
+   }
+
+   /*Cambiar tamaño de la clase services group*/
+      /*La propiedad flex-direction especifica como colocar los objetos al 
+      contenedor definiendo el eje principal y la dirección*/
+      /*La propiedad margin aplica margenes a un elemento*/
+   .services-group{
+      flex-direction: column;
+      margin-bottom: 0;
+   }
+
+   /*Cambiar tamaño de la clase services-1*/
+      /*La propiedad margin aplica margenes a un elemento*/
+   .services-1{
+      margin-bottom: 25px;
+   }
+
+   /*Cambiar tamaño de la clase general*/
+      /*La propiedad flex-direction especifica como colocar los objetos al 
+      contenedor definiendo el eje principal y la dirección*/
+   .general{
+      flex-direction: column;
+   }
+
+   /*Cambiar tamaño de la clase general-1*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .general-1{
+      width: 100%;
+      padding: 30px;
+      text-align: center;
+   }
+
+   /*Cambiar estilo de las clases general-2 y general-3*/
+      /*Display: none oculta un elemento sin eliminarlo*/
+   .general-2,.general-3{
+      display: none;
+   }
+
+   /*Cambiar tamaño de la clase blog*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .blog{
+      padding: 30px;
+   }
+
+   /*Cambiar estilo del contenido del blog*/
+      /*La propiedad flex-direction especifica como colocar los objetos al 
+      contenedor definiendo el eje principal y la dirección*/
+   .blog-content{
+      flex-direction: column;
+   }
+
+   /*Cambiar tamaño de la clase blog-1*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .blog-1{
+      padding: 0;
+   }
+
+   /*Cambiar tamaño de la clase footer*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .footer{
+      padding: 30px;
+   }
+
+   /*Cambiar estilo del contenido de la clase footer*/
+   .footer-content{
+      flex-direction: column;
+      text-align: center;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
