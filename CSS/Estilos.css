@@ -681,6 +681,12 @@ p{
       padding: 30px;
    }
 
+   /*Cambiar estilo a titulos de la clase footer*/
+   .footer h3{
+      margin-top: 25px;
+      margin-bottom: 25px;
+   }
+
    /*Cambiar estilo del contenido de la clase footer*/
    .footer-content{
       flex-direction: column;
